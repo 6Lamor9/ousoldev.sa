@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Astro description">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/svg+xml" href="./logo.svg">
+  <meta name="generator" content="Astro v2.8.5">
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles2.css" />
+</head>
+
+<body class="dark:bg-slate-900 text-black dark:text-white">
+  <style>
+    astro-island,
+    astro-slot,
+    astro-static-slot {
+      display: contents
+    }
+  </style>
+  <script>(() => { var e = async t => { await (await t())() }; (self.Astro || (self.Astro = {})).only = e; window.dispatchEvent(new Event("astro:only")); })();; (() => { var d; { let h = { 0: t => t, 1: t => JSON.parse(t, a), 2: t => new RegExp(t), 3: t => new Date(t), 4: t => new Map(JSON.parse(t, a)), 5: t => new Set(JSON.parse(t, a)), 6: t => BigInt(t), 7: t => new URL(t), 8: t => new Uint8Array(JSON.parse(t)), 9: t => new Uint16Array(JSON.parse(t)), 10: t => new Uint32Array(JSON.parse(t)) }, a = (t, e) => { if (t === "" || !Array.isArray(e)) return e; let [r, n] = e; return r in h ? h[r](n) : void 0 }; customElements.get("astro-island") || customElements.define("astro-island", (d = class extends HTMLElement { constructor() { super(...arguments); this.hydrate = async () => { var o; if (!this.hydrator || !this.isConnected) return; let e = (o = this.parentElement) == null ? void 0 : o.closest("astro-island[ssr]"); if (e) { e.addEventListener("astro:hydrate", this.hydrate, { once: !0 }); return } let r = this.querySelectorAll("astro-slot"), n = {}, c = this.querySelectorAll("template[data-astro-template]"); for (let s of c) { let i = s.closest(this.tagName); i != null && i.isSameNode(this) && (n[s.getAttribute("data-astro-template") || "default"] = s.innerHTML, s.remove()) } for (let s of r) { let i = s.closest(this.tagName); i != null && i.isSameNode(this) && (n[s.getAttribute("name") || "default"] = s.innerHTML) } let l = this.hasAttribute("props") ? JSON.parse(this.getAttribute("props"), a) : {}; await this.hydrator(this)(this.Component, l, n, { client: this.getAttribute("client") }), this.removeAttribute("ssr"), this.dispatchEvent(new CustomEvent("astro:hydrate")) } } connectedCallback() { !this.hasAttribute("await-children") || this.firstChild ? this.childrenConnectedCallback() : new MutationObserver((e, r) => { r.disconnect(), setTimeout(() => this.childrenConnectedCallback(), 0) }).observe(this, { childList: !0 }) } async childrenConnectedCallback() { let e = this.getAttribute("before-hydration-url"); e && await import(e), this.start() } start() { let e = JSON.parse(this.getAttribute("opts")), r = this.getAttribute("client"); if (Astro[r] === void 0) { window.addEventListener(`astro:${r}`, () => this.start(), { once: !0 }); return } Astro[r](async () => { let n = this.getAttribute("renderer-url"), [c, { default: l }] = await Promise.all([import(this.getAttribute("component-url")), n ? import(n) : () => () => { }]), o = this.getAttribute("component-export") || "default"; if (!o.includes(".")) this.Component = c[o]; else { this.Component = c; for (let s of o.split(".")) this.Component = this.Component[s] } return this.hydrator = l, this.hydrate }, e, this) } attributeChangedCallback() { this.hydrate() } }, d.observedAttributes = ["props"], d)) } })();</script>
+  <astro-island uid="Z2opWhE" component-url="./DarkModeswitcher.63852a8c.js" component-export="default"
+    renderer-url="./client.c4e17359.js" props="{}" ssr="" client="only"
+    opts="{&quot;name&quot;:&quot;DarkModeswitcher&quot;,&quot;value&quot;:true}"></astro-island>
+
+
+
+  <astro-island uid="1jvJmg" component-url="./Navbar.743012fb.js" component-export="default"
+    renderer-url="./client.c4e17359.js"
+    props="{&quot;pd&quot;:[0,{&quot;home&quot;:[0,{&quot;name&quot;:[0,&quot;اصول التطور&quot;],&quot;link&quot;:[0,&quot;/&quot;],&quot;logo&quot;:[0,&quot;cmlogo2.png&quot;]}],&quot;pages&quot;:[1,&quot;[[0,{\&quot;name\&quot;:[0,\&quot;حول\&quot;],\&quot;link\&quot;:[0,\&quot;/about\&quot;]}],[0,{\&quot;name\&quot;:[0,\&quot;اتصل بنا\&quot;],\&quot;link\&quot;:[0,\&quot;/contact\&quot;]}],[0,{\&quot;name\&quot;:[0,\&quot;اعمل معنا\&quot;],\&quot;link\&quot;:[0,\&quot;/workwithus\&quot;]}]]&quot;],&quot;service&quot;:[0,{&quot;name&quot;:[0,&quot;خدماتنا&quot;],&quot;servies&quot;:[1,&quot;[[0,{\&quot;name\&quot;:[0,\&quot;جميع الخدمات\&quot;],\&quot;link\&quot;:[0,\&quot;/servies\&quot;]}],[0,{\&quot;name\&quot;:[0,\&quot;توحيد الأقساط\&quot;],\&quot;link\&quot;:[0,\&quot;/servies/#coi\&quot;]}],[0,{\&quot;name\&quot;:[0,\&quot;حلول تمويلة\&quot;],\&quot;link\&quot;:[0,\&quot;/servies/#fs/\&quot;]}],[0,{\&quot;name\&quot;:[0,\&quot;استشارات تمويلية وعقارية\&quot;],\&quot;link\&quot;:[0,\&quot;/servies/#fara\&quot;]}],[0,{\&quot;name\&quot;:[0,\&quot;الرهن العقاري\&quot;],\&quot;link\&quot;:[0,\&quot;/servies/#mo\&quot;]}]]&quot;]}]}]}"
+    ssr="" client="only" opts="{&quot;name&quot;:&quot;Navbar&quot;,&quot;value&quot;:true}"></astro-island>
+  <section class="bg-white dark:bg-slate-900  section center3">
+    <div class="flex w-full mob:flex-col max-w-screen-xl px-4 xs:mt-8 py-8 mx-auto lg:py-16">
+      <div class=" place-self-center center1 flex-col  items-end  text-right">
+        <h1
+          class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+          بيت الاحلام على بعد خطوة
+        </h1>
+        <p class="max-w-2xl mb-6  text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+          تخلص من الاقساط المتراكمة واحصل على تمويل جديد بأقل الأسعار
+        </p>
+
+        <button type="button" herf="/contact"
+          class="text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-5 py-2.5 text-sm text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-cyan-300 dark:focus:ring-cyan-800 rounded-lg w-32">اتصل
+          الان</button>
+      </div>
+      <div
+        class="btn-15 mob:h-[40vh] md:h-[50vh] md:w-1/2 bg-center bg-contain bg-no-repeat bg-[url(images/house2.jpg)]">
+      </div>
+    </div>
+  </section>
+  <script>(() => { var e = async t => { await (await t())() }; (self.Astro || (self.Astro = {})).load = e; window.dispatchEvent(new Event("astro:load")); })();</script>
+  <astro-island uid="11TAgH" component-url="./userfirstform.8cb3b0d5.js" component-export="default"
+    renderer-url="./client.c4e17359.js"
+    props="{&quot;pd&quot;:[1,&quot;[[0,{\&quot;label\&quot;:[0,\&quot;اسم الكريم\&quot;],\&quot;type\&quot;:[0,\&quot;text\&quot;],\&quot;placeholder\&quot;:[0,\&quot;اسمك الاول و الاخير\&quot;],\&quot;name\&quot;:[0,\&quot;username\&quot;]}],[0,{\&quot;label\&quot;:[0,\&quot;رقم الهاتف\&quot;],\&quot;type\&quot;:[0,\&quot;tel\&quot;],\&quot;placeholder\&quot;:[0,\&quot;0503458659\&quot;],\&quot;name\&quot;:[0,\&quot;phone\&quot;]}],[0,{\&quot;label\&quot;:[0,\&quot;اذكر طلبك\&quot;],\&quot;type\&quot;:[0,\&quot;text\&quot;],\&quot;placeholder\&quot;:[0,\&quot;اختياري\&quot;],\&quot;name\&quot;:[0,\&quot;order\&quot;]}]]&quot;]}"
+    ssr="" client="load" opts="{&quot;name&quot;:&quot;Uff&quot;,&quot;value&quot;:true}" await-children="">
+    <div class="text-center ">
+      <article data-svelte-h="svelte-1gu6evl">
+        <h1 class="font-bold text-4xl">قدم طلبك الان</h1>
+      </article>
+      <form class="center3 p-4 gap-4 xs:grid-cols-1 grid-cols-2 md:grid-cols-4"> <label
+          class="font-medium block text-gray-900 dark:text-gray-300 space-y-2 w-full text-xl"><span>اسم الكريم</span>
+          <input required
+            class="block w-full disabled:cursor-not-allowed disabled:opacity-50 p-3 focus:border-primary-500 focus:ring-primary-500 dark:focus:border-primary-500 dark:focus:ring-primary-500 bg-gray-50 text-gray-900 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 border-gray-300 dark:border-gray-600 sm:text-base rounded-lg text-center"
+            placeholder="اسمك الاول و الاخير" name="username" type="text"> </label> <label
+          class="font-medium block text-gray-900 dark:text-gray-300 space-y-2 w-full text-xl"><span>رقم الهاتف</span>
+          <input required
+            class="block w-full disabled:cursor-not-allowed disabled:opacity-50 p-3 focus:border-primary-500 focus:ring-primary-500 dark:focus:border-primary-500 dark:focus:ring-primary-500 bg-gray-50 text-gray-900 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 border-gray-300 dark:border-gray-600 sm:text-base rounded-lg text-center"
+            placeholder="0503458659" name="phone" type="tel"> </label> <label
+          class="font-medium block text-gray-900 dark:text-gray-300 space-y-2 w-full text-xl"><span>اذكر طلبك</span>
+          <input required
+            class="block w-full disabled:cursor-not-allowed disabled:opacity-50 p-3 focus:border-primary-500 focus:ring-primary-500 dark:focus:border-primary-500 dark:focus:ring-primary-500 bg-gray-50 text-gray-900 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 border-gray-300 dark:border-gray-600 sm:text-base rounded-lg text-center"
+            placeholder="اختياري" name="order" type="text"> </label> <button
+          class="w-full bg-primary h-12 mt-8 text-xl rounded-lg outline outline-black" type="submit"
+          data-svelte-h="svelte-femnut">ارسل الطلب</button></form>
+    </div>
+  </astro-island>
+  <section class="min-h-[75vh] flex justify-evenly flex-col">
+    <div class="my-8">
+      <article class="w-full  text-center">
+        <h1 class="font-bold text-4xl">خدماتنا</h1>
+        <p class="text-xl px-4">اختر من حلول تمويلية متعددة تناسب احتياجاتك، ونساعدك في تحقيق أهدافك المالية.</p>
+      </article>
+    </div>
+    <div class="grid  h-fit gap-4 p-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div
+        class="bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 rounded-lg border border-gray-200 dark:border-gray-700 divide-gray-200 dark:divide-gray-700 shadow-md flex flex-col p-4 sm:p-6 text-right h-full w-full max-w-none">
+        <div class="w-full h-12 flex justify-end">
+          <div class="h-12 w-12 border-2 border-primary rounded-full"><img src="svgs/house.svg" class="w-8 mb-3 m-2"
+              alt="الرهن العقاري"></div>
+        </div> <a href="/servies/#mo">
+          <h5 class="mb-2 text-2xl font-semibold tracking-tight">الرهن العقاري</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">استفد من خدمة الرهن العقاري لتحقيق أحلامك في
+          التملّك السهل والميسّر</p> <a href="/servies/#mo"
+          class="inline-flex items-center text-primary hover:underline">المزيد
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="shrink-0 w-3 h-3 ml-2.5" role="img"
+            aria-label="arrow-up-right-from-square-outline" viewBox="0 0 18 18"><!-- HTML_TAG_START -->
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778" />
+            <!-- HTML_TAG_END -->
+          </svg> </a>
+      </div>
+      <div
+        class="bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 rounded-lg border border-gray-200 dark:border-gray-700 divide-gray-200 dark:divide-gray-700 shadow-md flex flex-col p-4 sm:p-6 text-right h-full w-full max-w-none">
+        <div class="w-full h-12 flex justify-end">
+          <div class="h-12 w-12 border-2 border-primary rounded-full"><img src="svgs/card.svg" class="w-8 mb-3 m-2"
+              alt="توحيد الأقساط"></div>
+        </div> <a href="/servies/#installments">
+          <h5 class="mb-2 text-2xl font-semibold tracking-tight">توحيد الأقساط</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">جمع أقساطك المتفرقة في خدمة توحيد الأقساط، واستمتع
+          بسداد ميسر وميسّر.</p> <a href="/servies/#installments"
+          class="inline-flex items-center text-primary hover:underline">المزيد
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="shrink-0 w-3 h-3 ml-2.5" role="img"
+            aria-label="arrow-up-right-from-square-outline" viewBox="0 0 18 18"><!-- HTML_TAG_START -->
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778" />
+            <!-- HTML_TAG_END -->
+          </svg> </a>
+      </div>
+      <div
+        class="bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 rounded-lg border border-gray-200 dark:border-gray-700 divide-gray-200 dark:divide-gray-700 shadow-md flex flex-col p-4 sm:p-6 text-right h-full w-full max-w-none">
+        <div class="w-full h-12 flex justify-end">
+          <div class="h-12 w-12 border-2 border-primary rounded-full"><img src="svgs/something.svg" class="w-8 mb-3 m-2"
+              alt="حلول تمويلية"></div>
+        </div> <a href="/servies/#finance">
+          <h5 class="mb-2 text-2xl font-semibold tracking-tight">حلول تمويلية</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">اختر من حلول تمويلية متعددة تناسب احتياجاتك،
+          ونساعدك في تحقيق أهدافك المالية.</p> <a href="/servies/#finance"
+          class="inline-flex items-center text-primary hover:underline">المزيد
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="shrink-0 w-3 h-3 ml-2.5" role="img"
+            aria-label="arrow-up-right-from-square-outline" viewBox="0 0 18 18"><!-- HTML_TAG_START -->
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778" />
+            <!-- HTML_TAG_END -->
+          </svg> </a>
+      </div>
+      <div
+        class="bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 rounded-lg border border-gray-200 dark:border-gray-700 divide-gray-200 dark:divide-gray-700 shadow-md flex flex-col p-4 sm:p-6 text-right h-full w-full max-w-none">
+        <div class="w-full h-12 flex justify-end">
+          <div class="h-12 w-12 border-2 border-primary rounded-full"><img src="svgs/lins.svg" class="w-8 mb-3 m-2"
+              alt="استشارات تمويلية وعقارية"></div>
+        </div> <a href="/servies/#consultations">
+          <h5 class="mb-2 text-2xl font-semibold tracking-tight">استشارات تمويلية وعقارية</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">احصل على استشارات مخصصة تمويلية وعقارية من خبراء
+          مجالنا لتسهيل قراراتك وتحقيق أهدافك.</p> <a href="/servies/#consultations"
+          class="inline-flex items-center text-primary hover:underline">المزيد
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="shrink-0 w-3 h-3 ml-2.5" role="img"
+            aria-label="arrow-up-right-from-square-outline" viewBox="0 0 18 18"><!-- HTML_TAG_START -->
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778" />
+            <!-- HTML_TAG_END -->
+          </svg> </a>
+      </div>
+    </div>
+
+  </section>
+  <section class=" w-screen p-4  grid gap-4  md:grid-rows-3 md:grid-cols-2">
+    <div
+      class=" row-span-2   flex justify-center flex-col items-center md:items-end min-h-[30vh] bg-[url('cmlogo2.png')] bg-center md:bg-left text-right bg-contain bg-no-repeat">
+      <h2 class=" font-bold text-6xl md:text-7 lg:text-8xl">لماذا نحن</h2>
+    </div>
+
+    <div class="w-full inline-grid grid-flow-col grid-cols-6 gap-4 min-h-full">
+      <div
+        class="text-right col-span-5 p-4 rounded-2xl flex justify-evenly flex-col h-full bg-base-200 bg-slate-200 dark:bg-slate-700 md:rounded-box">
+        <h2 class="text-2xl font-semibold tracking-tight">أحلامك، أولويتنا</h2>
+        <p class="opacity-80">افتح باب منزل أحلامك بسهولة. تختص شركتنا في تحويل التطلعات إلى حقيقة، وترافقك في رحلة سلسة
+          نحو تملك منزلك.</p>
+      </div> <img src="svgs/star.svg" alt="Shoes" class="col-span-1 h-full rounded-2xl bg-slate-200 dark:bg-slate-700">
+    </div>
+    <div class="w-full inline-grid grid-flow-col grid-cols-6 gap-4 min-h-full">
+      <div
+        class="text-right col-span-5 p-4 rounded-2xl flex justify-evenly flex-col h-full bg-base-200 bg-slate-200 dark:bg-slate-700 md:rounded-box">
+        <h2 class="text-2xl font-semibold tracking-tight">حلول مالية مُصممة خصيصًا</h2>
+        <p class="opacity-80">انسَ نهج الحلول القياسية. نفتخر بتقديم حلول مالية مُخصصة تتماشى تمامًا مع أهدافك الفريدة،
+          مما يجعل مسارك نحو التملك سلسًا وخاليًا من الضغوط.</p>
+      </div> <img src="svgs/esay.svg" alt="Shoes" class="col-span-1 h-full rounded-2xl bg-slate-200 dark:bg-slate-700">
+    </div>
+    <div class="w-full inline-grid grid-flow-col grid-cols-6 gap-4 min-h-full">
+      <div
+        class="text-right col-span-5 p-4 rounded-2xl flex justify-evenly flex-col h-full bg-base-200 bg-slate-200 dark:bg-slate-700 md:rounded-box">
+        <h2 class="text-2xl font-semibold tracking-tight">خبرة تُمكنك من الاعتماد</h2>
+        <p class="opacity-80">مع فريق من المحترفين المُخضرمين في مجال العقارات والتمويل، نقدم لك أكثر من مجرد خدمات –
+          نقدم لك خبرة يمكنك الاعتماد عليها. اعتمد علينا لتموينك برؤى ونصائح تمكّنك من اتخاذ قرارات مستنيرة.</p>
+      </div> <img src="svgs/pt.svg" alt="Shoes" class="col-span-1 h-full rounded-2xl bg-slate-200 dark:bg-slate-700">
+    </div>
+    <div class="w-full inline-grid grid-flow-col grid-cols-6 gap-4 min-h-full">
+      <div
+        class="text-right col-span-5 p-4 rounded-2xl flex justify-evenly flex-col h-full bg-base-200 bg-slate-200 dark:bg-slate-700 md:rounded-box">
+        <h2 class="text-2xl font-semibold tracking-tight">مساعدة متواصلة</h2>
+        <p class="opacity-80">نحن هنا لمساعدتك في كل خطوة من خطوات رحلتك نحو التملك. اعتمد علينا لتوفير الدعم اللازم لك
+          في كل مرحلة من مراحل العملية، وتمتع برحلة سلسة وميسّرة.</p>
+      </div> <img src="svgs/help.svg" alt="Shoes" class="col-span-1 h-full rounded-2xl bg-slate-200 dark:bg-slate-700">
+    </div>
+  </section>
+  <section class="section center3">
+    <h1 class="text-5xl xs:text-4xl font-bold text-center my-8">ماذا يقول عملائنا عنا؟</h1>
+    <div
+      class="dark:bg-gray-800 text-gray-500 dark:text-gray-400 dark:border-gray-700 divide-gray-200 dark:divide-gray-700 shadow-md max-w-screen-xl flex-col p-0 grid md:grid-cols-2 rounded-3xl border-4 border-slate-700 overflow-hidden mob:border-b-transparent bg-slate-700 gap-1">
+      <figure class="center1 flex-col p-8 text-center bg-white dark:bg-slate-800">
+        <blockquote class="mx-auto mb-4 max-w-2xl text-gray-500 dark:text-gray-400">
+          <h3 class="text-lg font-bold text-gray-900">تجربة فعّالة ورائعة</h3>
+          <p class="my-4 font-light">شركتكم لها دور كبير في تحقيق حلمي بامتلاك منزل العائلة. عملكم الاحترافي والتعامل
+            الودي سهّل لي كل خطوة في العملية. </p>
+        </blockquote>
+        <figcaption class="center1 space-x-3">
+          <div class="space-y-0.5 font-medium text-right">
+            <div>أحمد عبدالله</div>
+          </div> <img class="w-9 h-9 rounded-full" src="images/ahmed.jpg" alt="أحمد عبدالله">
+        </figcaption>
+      </figure>
+      <figure class="center1 flex-col p-8 text-center bg-white dark:bg-slate-800">
+        <blockquote class="mx-auto mb-4 max-w-2xl text-gray-500 dark:text-gray-400">
+          <h3 class="text-lg font-bold text-gray-900">دعم محترف واستشارات متقنة</h3>
+          <p class="my-4 font-light">استفدت كثيرًا من الدعم المتواصل الذي قدمه فريق العمل لي خلال مراحل التمويل.
+            استشاراتهم المالية كانت مفيدة جدًا لاتخاذ القرارات المناسبة. </p>
+        </blockquote>
+        <figcaption class="center1 space-x-3">
+          <div class="space-y-0.5 font-medium text-right">
+            <div>سارة محمد</div>
+          </div> <img class="w-9 h-9 rounded-full" src="images/sara.jpg" alt="سارة محمد">
+        </figcaption>
+      </figure>
+      <figure class="center1 flex-col p-8 text-center bg-white dark:bg-slate-800">
+        <blockquote class="mx-auto mb-4 max-w-2xl text-gray-500 dark:text-gray-400">
+          <h3 class="text-lg font-bold text-gray-900">مساهمة كبيرة في تحقيق أهدافي</h3>
+          <p class="my-4 font-light">لا يمكنني سوى أن أشكر شركتكم على توفير التمويل الذي ساعدني في تحقيق حلمي بتملك
+            المنزل الذي طالما رغبت به. فريقكم أثبت جدارته بكل معنى. </p>
+        </blockquote>
+        <figcaption class="center1 space-x-3">
+          <div class="space-y-0.5 font-medium text-right">
+            <div>عبدالرحمن العتيبي</div>
+          </div> <img class="w-9 h-9 rounded-full" src="images/abdulrahman.jpg" alt="عبدالرحمن العتيبي">
+        </figcaption>
+      </figure>
+      <figure class="center1 flex-col p-8 text-center bg-white dark:bg-slate-800">
+        <blockquote class="mx-auto mb-4 max-w-2xl text-gray-500 dark:text-gray-400">
+          <h3 class="text-lg font-bold text-gray-900">خدمة سريعة ومميزة</h3>
+          <p class="my-4 font-light">كانت تجربتي مع شركتكم فعّالة وسلسة. فريق الدعم كان جاهزًا للإجابة على استفساراتي في
+            أي وقت، مما أضفى راحة كبيرة أثناء التعامل معكم. </p>
+        </blockquote>
+        <figcaption class="center1 space-x-3">
+          <div class="space-y-0.5 font-medium text-right">
+            <div>لينا الغامدي</div>
+          </div> <img class="w-9 h-9 rounded-full" src="images/lina.jpg" alt="لينا الغامدي">
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+  <astro-island uid="Z1Et1Ae" component-url="./section6.db5c6b6d.js" component-export="default"
+    renderer-url="./client.c4e17359.js"
+    props="{&quot;pd&quot;:[0,{&quot;title&quot;:[0,&quot;اسئلة شائعة&quot;],&quot;text&quot;:[0,&quot;نقدم لكم إجابات على بعض الأسئلة الشائعة التي قد تكون لديكم حول خدماتنا وتمويل العقارات. إذا كان لديكم أي استفسارات إضافية، فلا تترددوا في التواصل مع فريقنا المتخصص.&quot;],&quot;qalist&quot;:[1,&quot;[[0,{\&quot;question\&quot;:[0,\&quot;هل تقدمون تمويل للعقارات السكنية فقط؟\&quot;],\&quot;answer\&quot;:[0,\&quot;لا، نحن نقدم تمويلًا لمختلف أنواع العقارات، بما في ذلك السكنية والتجارية. يمكنك التواصل مع فريقنا لمعرفة المزيد عن خيارات التمويل المتاحة.\&quot;]}],[0,{\&quot;question\&quot;:[0,\&quot;ما هي متطلبات الحصول على تمويل عقاري؟\&quot;],\&quot;answer\&quot;:[0,\&quot;متطلبات الحصول على تمويل عقاري تتفاوت حسب الشركة ونوع التمويل. عادةً ما تشمل تقديم أوراق مالية وشخصية وتقديم تفاصيل عن العقار المراد تمويله. يُفضل التواصل معنا للحصول على قائمة دقيقة للمتطلبات.\&quot;]}],[0,{\&quot;question\&quot;:[0,\&quot;هل يمكنني تقديم طلب للحصول على تمويل إذا كانت لدي سجلات ائتمان ضعيفة؟\&quot;],\&quot;answer\&quot;:[0,\&quot;نحن نفهم أن لدى الكثير من الأشخاص تحديات في سجلات الائتمان. نحن نقدم خيارات متعددة تناسب مختلف الأوضاع المالية. يُفضل التواصل مع فريقنا لمناقشة خيارات التمويل المتاحة لك.\&quot;]}]]&quot;],&quot;askus&quot;:[0,{&quot;title&quot;:[0,&quot;اسألنا&quot;],&quot;subtitle&quot;:[0,&quot;هل لديك أسئلة؟ لا تتردد في طرحها.&quot;],&quot;ff&quot;:[0,{&quot;if&quot;:[1,&quot;[[0,{\&quot;label\&quot;:[0,\&quot;الاسم\&quot;],\&quot;type\&quot;:[0,\&quot;text\&quot;],\&quot;name\&quot;:[0,\&quot;name\&quot;],\&quot;placeholder\&quot;:[0,\&quot;أدخل اسمك\&quot;]}],[0,{\&quot;label\&quot;:[0,\&quot;البريد الإلكتروني\&quot;],\&quot;type\&quot;:[0,\&quot;email\&quot;],\&quot;name\&quot;:[0,\&quot;email\&quot;],\&quot;placeholder\&quot;:[0,\&quot;أدخل عنوان بريدك الإلكتروني\&quot;]}]]&quot;],&quot;tf&quot;:[0,{&quot;label&quot;:[0,&quot;الرسالة&quot;],&quot;type&quot;:[0,&quot;textarea&quot;],&quot;name&quot;:[0,&quot;message&quot;],&quot;placeholder&quot;:[0,&quot;اكتب رسالتك هنا&quot;]}]}],&quot;submitButton&quot;:[0,&quot;إرسال&quot;],&quot;successMessage&quot;:[0,&quot;تم إرسال رسالتك بنجاح. سنقوم بالرد عليك في أقرب وقت ممكن.&quot;],&quot;errorMessage&quot;:[0,&quot;حدث خطأ أثناء إرسال الرسالة. يرجى المحاولة مرة أخرى.&quot;]}]}]}"
+    ssr="" client="load" opts="{&quot;name&quot;:&quot;Section6&quot;,&quot;value&quot;:true}" await-children="">
+    <div class="bg-gradient-to-b from-white to-slate-300 h-[10vh] dark:from-slate-900 dark:to-slate-300 mt-8 w-screen">
+    </div>
+    <section class="lg:px-16 xl:px-28 p-4 gap-4 pb-28 grid-flow-dense grid md:grid-cols-2 bg-slate-300">
+      <div class="text-center center3">
+        <h1 class="text-5xl xs:text-4xl font-bold my-8">اسئلة شائعة</h1>
+        <p class="text-lg ">نقدم لكم إجابات على بعض الأسئلة الشائعة التي قد تكون لديكم حول خدماتنا وتمويل العقارات. إذا
+          كان لديكم أي استفسارات إضافية، فلا تترددوا في التواصل مع فريقنا المتخصص.</p>
+      </div>
+      <div class="text-gray-500 dark:text-gray-400 bg-slate-300 mt-16">
+        <h2 class="group"><button type="button"
+            class="items-center justify-between w-full font-medium group-first:rounded-t-xl border-l border-r group-first:border-t border-b border-gray-200 dark:border-gray-700 p-5 text-gray-500 dark:text-gray-400 hover:bg-gray-100 hover:dark:bg-gray-800 bg-white dark:bg-slate-900 text-right flex flex-row-reverse"
+            aria-expanded="false"><span slot="header" class="text-black dark:text-whtie">هل تقدمون تمويل للعقارات
+              السكنية فقط؟</span> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+              aria-label="chevron down" fill="none" viewBox="0 0 20 20" role="img"
+              stroke-width="2"><!-- HTML_TAG_START -->
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" stroke="currentColor"></path>
+              <!-- HTML_TAG_END -->
+            </svg> </button></h2>
+        <div class="hidden">
+          <div class="p-5 border-l border-r border-b border-gray-200 dark:border-gray-700">
+            <p class="mb-2 text-right">لا، نحن نقدم تمويلًا لمختلف أنواع العقارات، بما في ذلك السكنية والتجارية. يمكنك
+              التواصل مع فريقنا لمعرفة المزيد عن خيارات التمويل المتاحة.</p>
+          </div>
+        </div>
+        <h2 class="group"><button type="button"
+            class="items-center justify-between w-full font-medium group-first:rounded-t-xl border-l border-r group-first:border-t border-b border-gray-200 dark:border-gray-700 p-5 text-gray-500 dark:text-gray-400 hover:bg-gray-100 hover:dark:bg-gray-800 bg-white dark:bg-slate-900 text-right flex flex-row-reverse"
+            aria-expanded="false"><span slot="header" class="text-black dark:text-whtie">ما هي متطلبات الحصول على تمويل
+              عقاري؟</span> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" aria-label="chevron down"
+              fill="none" viewBox="0 0 20 20" role="img" stroke-width="2"><!-- HTML_TAG_START -->
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" stroke="currentColor"></path>
+              <!-- HTML_TAG_END -->
+            </svg> </button></h2>
+        <div class="hidden">
+          <div class="p-5 border-l border-r border-b border-gray-200 dark:border-gray-700">
+            <p class="mb-2 text-right">متطلبات الحصول على تمويل عقاري تتفاوت حسب الشركة ونوع التمويل. عادةً ما تشمل
+              تقديم أوراق مالية وشخصية وتقديم تفاصيل عن العقار المراد تمويله. يُفضل التواصل معنا للحصول على قائمة دقيقة
+              للمتطلبات.</p>
+          </div>
+        </div>
+        <h2 class="group"><button type="button"
+            class="items-center justify-between w-full font-medium group-first:rounded-t-xl border-l border-r group-first:border-t border-b border-gray-200 dark:border-gray-700 p-5 text-gray-500 dark:text-gray-400 hover:bg-gray-100 hover:dark:bg-gray-800 bg-white dark:bg-slate-900 text-right flex flex-row-reverse"
+            aria-expanded="false"><span slot="header" class="text-black dark:text-whtie">هل يمكنني تقديم طلب للحصول على
+              تمويل إذا كانت لدي سجلات ائتمان ضعيفة؟</span> <svg xmlns="http://www.w3.org/2000/svg" width="20"
+              height="20" aria-label="chevron down" fill="none" viewBox="0 0 20 20" role="img"
+              stroke-width="2"><!-- HTML_TAG_START -->
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" stroke="currentColor"></path>
+              <!-- HTML_TAG_END -->
+            </svg> </button></h2>
+        <div class="hidden">
+          <div class="p-5 border-l border-r border-b border-gray-200 dark:border-gray-700">
+            <p class="mb-2 text-right">نحن نفهم أن لدى الكثير من الأشخاص تحديات في سجلات الائتمان. نحن نقدم خيارات
+              متعددة تناسب مختلف الأوضاع المالية. يُفضل التواصل مع فريقنا لمناقشة خيارات التمويل المتاحة لك.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-slate-300 border-b-2 rounded-b-lg text-right ">
+      <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center ">اسألنا</h2>
+        <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">هل لديك أسئلة؟ لا
+          تتردد في طرحها.</p>
+        <form action="#" class="space-y-8">
+          <div><label for="usernmae" class="block mb-2 text-sm font-medium ">الاسم</label> <input type="text"
+              id="username" name="name"
+              class="shadow-sm bg-gray-50 border border-gray-300 text-right text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+              placeholder="أدخل اسمك" required> </div>
+          <div><label for="usernmae" class="block mb-2 text-sm font-medium ">البريد الإلكتروني</label> <input
+              type="email" id="username" name="email"
+              class="shadow-sm bg-gray-50 border border-gray-300 text-right text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+              placeholder="أدخل عنوان بريدك الإلكتروني" required> </div>
+          <div class="sm:col-span-2"><label for="message" class="block mb-2 text-sm font-medium ">الرسالة</label>
+            <textarea id="message" name="message" rows="6"
+              class="block p-2.5 w-full text-sm text-right bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+              placeholder="اكتب رسالتك هنا"></textarea></div> <button type="button" herf="/contact"
+            class="text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-5 py-2.5 text-sm text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-cyan-300 dark:focus:ring-cyan-800 rounded-lg w-32">ارسل</button>
+        </form>
+      </div>
+    </section>
+  </astro-island>
+
+  <footer class="p-4 rounded-lg shadow md:px-6 md:py-8 dark:bg-gray-800 bg-slate-300">
+    <div class="sm:flex sm:items-center flex-row-reverse sm:justify-between"><a href="/"
+        class="text-primary flex flex-row-reverse gap-2"><img src="cmlogo2.png" class="mr-3 h-8" alt="اصول التطور">
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">اصول التطور</span> </a>
+      <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
+        <li class="mr-4 last:mr-0 md:mr-6"><a href="/about" class="hover:underline">حول</a></li>
+        <li class="mr-4 last:mr-0 md:mr-6"><a href="/contact" class="hover:underline">اتصل بنا</a></li>
+        <li class="mr-4 last:mr-0 md:mr-6"><a href="/workwithus" class="hover:underline">اعمل معنا</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
+</html>
